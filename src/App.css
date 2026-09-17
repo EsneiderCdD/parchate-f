@@ -1,0 +1,26 @@
+.hero {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: #0a0a0f;
+}
+
+.collage-plane {
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  width: 1000px;
+  height: 1600px;
+  transform: translate(-50%, -50%) rotate(25deg);
+  transform-origin: center center;
+}
+
+.collage-card {
+  position: absolute;
+  border-radius: 14px;
+  box-shadow:
+    0 4px 24px rgba(0, 0, 0, 0.3),
+    0 1px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
