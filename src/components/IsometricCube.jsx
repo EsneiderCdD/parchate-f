@@ -8,9 +8,9 @@ function darkenColor(hex, amount = 30) {
   return `rgb(${r}, ${g}, ${b})`
 }
 
-export default function IsometricCube({ bgColor = '#5b21b6', logoUrl, children, sideColor, cubeSize = 140, depth = 24 }) {
-  const rightColor = sideColor || darkenColor(bgColor, 40)
-  const frontColor = sideColor || darkenColor(bgColor, 60)
+export default function IsometricCube({ bgColor = '#5b21b6', logoUrl, children, cubeSize = 140, depth = 24 }) {
+  const frontColor = darkenColor(bgColor, 30)
+  const rightColor = darkenColor(bgColor, 55)
 
   return (
     <div
@@ -22,8 +22,8 @@ export default function IsometricCube({ bgColor = '#5b21b6', logoUrl, children, 
     >
       <div className="shadow" />
 
-      <div className="faceRight" style={{ background: rightColor }} />
       <div className="faceFront" style={{ background: frontColor }} />
+      <div className="faceRight" style={{ background: rightColor }} />
 
       <div className="topFace" style={{ background: bgColor }}>
         <div className="bevel">

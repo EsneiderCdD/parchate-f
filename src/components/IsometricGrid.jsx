@@ -16,7 +16,6 @@ export default function IsometricGrid({ cubes, cubeSize = 140, gap = 30, columns
           key={cube.id ?? i}
           bgColor={cube.bgColor}
           logoUrl={cube.logoUrl}
-          sideColor={cube.sideColor}
           cubeSize={cubeSize}
           depth={cube.depth ?? 24}
         >
