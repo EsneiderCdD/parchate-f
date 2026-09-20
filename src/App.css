@@ -6,8 +6,11 @@
   background-color: #0a0a0f;
   background-image: radial-gradient(circle, rgba(255,255,255,0.06) 1px, transparent 1px);
   background-size: 24px 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   perspective: 1200px;
+}
+
+.grid-container {
+  position: absolute;
+  bottom: -320px;
+  right: -320px;
 }
