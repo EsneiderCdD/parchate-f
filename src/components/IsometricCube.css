@@ -1,0 +1,87 @@
+.isometricCube {
+  position: relative;
+  width: var(--cube-size, 140px);
+  height: var(--cube-size, 140px);
+  transform-style: preserve-3d;
+}
+
+.topFace {
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  transform: translateZ(var(--cube-depth, 24px));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bevel {
+  position: absolute;
+  inset: 10px;
+  border: 3px solid rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+  pointer-events: none;
+}
+
+.cornerDot {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.35);
+  border-radius: 50%;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.cornerDot.tl { top: -4px; left: -4px; }
+.cornerDot.tr { top: -4px; right: -4px; }
+.cornerDot.bl { bottom: -4px; left: -4px; }
+.cornerDot.br { bottom: -4px; right: -4px; }
+
+.logoArea {
+  position: relative;
+  width: 60%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.logoArea img,
+.logoArea svg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+.faceRight {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: var(--cube-depth, 24px);
+  transform-origin: bottom center;
+  transform: rotateX(-90deg);
+  border-radius: 0 0 4px 4px;
+}
+
+.faceFront {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: var(--cube-depth, 24px);
+  height: 100%;
+  transform-origin: right center;
+  transform: rotateY(90deg);
+  border-radius: 0 4px 4px 0;
+}
+
+.shadow {
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  background: rgba(0, 0, 0, 0.5);
+  filter: blur(20px);
+  transform: translateZ(calc(var(--cube-depth, 24px) * -1 - 10px));
+}
