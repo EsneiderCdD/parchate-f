@@ -20,12 +20,7 @@ const testCubes = [
   { id: 16, bgColor: '#0891b2' },
   { id: 17, bgColor: '#1e1e1e' },
   { id: 18, bgColor: '#f59e0b' },
-  { id: 19, bgColor: '#ec4899' },
-  { id: 20, bgColor: '#0d9488' },
-  { id: 21, bgColor: '#7c3aed' },
-  { id: 22, bgColor: '#ea580c' },
-  { id: 23, bgColor: '#2563eb' },
-  { id: 24, bgColor: '#16a34a' },
+  
 ]
 
 function App() {
