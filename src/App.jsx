@@ -1,5 +1,5 @@
 import './App.css'
-import IsometricGrid from './components/IsometricGrid'
+import IsometricGrid from './components/specific/IsometricCube/IsometricGrid'
 
 const testCubes = [
   { id: 1,  bgColor: '#2563eb' },
