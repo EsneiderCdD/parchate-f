@@ -1,0 +1,122 @@
+.live-section {
+  position: relative;
+  min-height: 600px;
+}
+
+.live-wrapper {
+  max-width: 1350px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  min-height: 600px;
+}
+
+.live-background {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.live-background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(20px);
+  transform: scale(1.1);
+}
+
+.live-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.live-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  min-height: 600px;
+  padding: 80px 60px;
+}
+
+.live-card {
+  display: flex;
+  gap: 48px;
+  align-items: stretch;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 28px;
+  backdrop-filter: blur(12px);
+  max-width: 750px;
+}
+
+.live-media {
+  flex-shrink: 0;
+}
+
+.live-media img {
+  width: 360px;
+  height: 100%;
+  min-height: 220px;
+  object-fit: cover;
+  border-radius: 14px;
+  display: block;
+}
+
+.live-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  padding: 8px 0;
+}
+
+.live-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(239, 68, 68, 0.15);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  color: #ef4444;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 5px 12px;
+  border-radius: 6px;
+  width: fit-content;
+  letter-spacing: 1px;
+}
+
+.live-creator {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.5px;
+}
+
+.live-title {
+  font-size: 0.95rem;
+  color: #888;
+  line-height: 1.6;
+}
+
+.live-cta {
+  margin-top: 8px;
+  padding: 14px 28px;
+  background: #7c3aed;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.15s ease;
+  width: fit-content;
+}
+
+.live-cta:hover {
+  background: #6d28d9;
+  transform: translateY(-1px);
+}

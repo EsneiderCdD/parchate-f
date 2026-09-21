@@ -1,5 +1,6 @@
 import './App.css'
 import IsometricGrid from './components/specific/IsometricCube/IsometricGrid'
+import LiveSection from './components/specific/LiveSection/LiveSection'
 
 const testCubes = [
   { id: 1, bgColor: '#2563eb' },
@@ -24,23 +25,29 @@ const testCubes = [
 
 function App() {
   return (
-    <section className="hero">
-      <div className="layout">
-        <div className="hero-content">
-          <h1>PARCHATE</h1>
-          <p>
-            Tu cartelera en vivo de contenido tech. Entra, elige y aprende.
-          </p>
-          <div className="hero-buttons">
-            <button className="btn-primary">Ver qué hay en vivo</button>
-            <button className="btn-secondary">Soy creador</button>
+    <>
+      <section className="hero">
+        <div className="layout">
+          <div className="hero-content">
+            <h1>PARCHATE</h1>
+            <p>
+              Tu cartelera en vivo de contenido tech. Entra, elige y aprende.
+            </p>
+            <div className="hero-buttons">
+              <button className="btn-primary">Ver qué hay en vivo</button>
+              <button className="btn-secondary">Soy creador</button>
+            </div>
           </div>
+          <div className="grid-container">
+            <IsometricGrid cubes={testCubes} cubeSize={325} gap={0} columns={6} />
+          </div>
+          
         </div>
-        <div className="grid-container">
-          <IsometricGrid cubes={testCubes} cubeSize={325} gap={0} columns={6} />
-        </div>
-      </div>
-    </section>
+        <LiveSection />
+      </section>
+
+      
+    </>
   )
 }
 
