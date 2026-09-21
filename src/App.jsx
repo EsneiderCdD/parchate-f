@@ -41,12 +41,10 @@ function App() {
           <div className="grid-container">
             <IsometricGrid cubes={testCubes} cubeSize={325} gap={0} columns={6} />
           </div>
-          
         </div>
         <LiveSection />
-      </section>
 
-      
+      </section>
     </>
   )
 }

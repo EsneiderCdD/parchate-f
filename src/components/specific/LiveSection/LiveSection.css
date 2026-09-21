@@ -1,14 +1,46 @@
 .live-section {
   position: relative;
-  min-height: 600px;
 }
 
-.live-wrapper {
+.live-frame-outer {
   max-width: 1350px;
   margin: 0 auto;
+  padding: 8px;
+  background: #16a34a;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 0;
+}
+
+.live-frame {
+  position: relative;
+  padding: 16px;
+  background: #16a34a;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 0;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.frame-dot {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.35);
+  border-radius: 50%;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.frame-dot.tl { top: -4px; left: -4px; }
+.frame-dot.tr { top: -4px; right: -4px; }
+.frame-dot.bl { bottom: -4px; left: -4px; }
+.frame-dot.br { bottom: -4px; right: -4px; }
+
+.live-wrapper {
+  width: 100%;
   position: relative;
   overflow: hidden;
-  min-height: 600px;
+  min-height: 450px;
+  border-radius: 0;
 }
 
 .live-background {
@@ -36,9 +68,9 @@
   z-index: 1;
   display: flex;
   align-items: center;
-  gap: 60px;
-  min-height: 600px;
-  padding: 80px 60px;
+  gap: 50px;
+  min-height: 450px;
+  padding: 50px;
 }
 
 .live-media {
@@ -47,9 +79,9 @@
 
 .live-media img {
   width: 100%;
-  height: 450px;
+  height: 350px;
   object-fit: cover;
-  border-radius: 16px;
+  border-radius: 0;
   display: block;
 }
 
@@ -57,7 +89,7 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 14px;
 }
 
 .live-badge {
@@ -77,14 +109,14 @@
 }
 
 .live-creator {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 700;
   color: #fff;
   letter-spacing: -0.5px;
 }
 
 .live-title {
-  font-size: 1rem;
+  font-size: 0.95rem;
   color: #888;
   line-height: 1.6;
 }
