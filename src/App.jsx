@@ -20,6 +20,10 @@ const testCubes = [
   { id: 16, bgColor: '#0891b2' },
   { id: 17, bgColor: '#1e1e1e' },
   { id: 18, bgColor: '#f59e0b' },
+  // { id: 19, bgColor: '#dc2626' },
+  // { id: 20, bgColor: '#0891b2' },
+  // { id: 21, bgColor: '#1e1e1e' },
+  // { id: 22, bgColor: '#f59e0b' },
   
 ]
 
@@ -27,7 +31,7 @@ function App() {
   return (
     <section className="hero">
       <div className="grid-container">
-        <IsometricGrid cubes={testCubes} cubeSize={240} gap={0} columns={6} />
+        <IsometricGrid cubes={testCubes} cubeSize={350} gap={0} columns={6} />
       </div>
     </section>
   )
