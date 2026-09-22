@@ -1,5 +1,5 @@
 import './LiveSection.css'
-import todocode from '../../../assets/backgrounds/todocode.jpg'
+import mayarainer from '../../../assets/backgrounds/mayarainer.png'
 
 export default function LiveSection() {
   return (
@@ -12,15 +12,13 @@ export default function LiveSection() {
           <span className="frame-dot br" />
 
           <div className="live-background">
-            <img src={todocode} alt="" />
+            <img src={mayarainer} alt="" />
             <div className="live-overlay" />
           </div>
 
           <div className="live-wrapper">
             <div className="live-content">
-              <div className="live-media">
-                <img src={todocode} alt="Stream en vivo" />
-              </div>
+              <img className="live-content-bg" src={mayarainer} alt="" />
 
               <div className="live-info">
                 <span className="live-badge">EN DIRECTO</span>
