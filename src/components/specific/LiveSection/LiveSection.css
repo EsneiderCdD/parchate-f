@@ -80,7 +80,6 @@
   align-items: stretch;
   gap: 50px;
   min-height: 450px;
-  padding: 50px;
 }
 
 .live-media {
@@ -93,6 +92,14 @@
   object-fit: cover;
   border-radius: 0;
   display: block;
+  -webkit-mask:
+    linear-gradient(to right, transparent, #000 40px, #000 calc(100% - 40px), transparent),
+    linear-gradient(to bottom, transparent, #000 40px, #000 calc(100% - 40px), transparent);
+  -webkit-mask-composite: source-in;
+  mask:
+    linear-gradient(to right, transparent, #000 40px, #000 calc(100% - 40px), transparent),
+    linear-gradient(to bottom, transparent, #000 40px, #000 calc(100% - 40px), transparent);
+  mask-composite: intersect;
 }
 
 .live-info {
