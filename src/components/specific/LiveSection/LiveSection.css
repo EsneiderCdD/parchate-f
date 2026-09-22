@@ -38,6 +38,7 @@
 .live-wrapper {
   width: 100%;
   position: relative;
+  z-index: 1;
   overflow: hidden;
   min-height: 450px;
   border-radius: 0;
@@ -45,8 +46,9 @@
 
 .live-background {
   position: absolute;
-  inset: 0;
+  inset: 20px 24px;
   z-index: 0;
+  overflow: hidden;
 }
 
 .live-background img {

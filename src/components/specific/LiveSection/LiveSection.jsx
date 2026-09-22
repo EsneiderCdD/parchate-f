@@ -11,12 +11,12 @@ export default function LiveSection() {
           <span className="frame-dot bl" />
           <span className="frame-dot br" />
 
-          <div className="live-wrapper">
-            <div className="live-background">
-              <img src={todocode} alt="" />
-              <div className="live-overlay" />
-            </div>
+          <div className="live-background">
+            <img src={todocode} alt="" />
+            <div className="live-overlay" />
+          </div>
 
+          <div className="live-wrapper">
             <div className="live-content">
               <div className="live-media">
                 <img src={todocode} alt="Stream en vivo" />
