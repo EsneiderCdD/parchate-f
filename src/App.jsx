@@ -43,10 +43,11 @@ function App() {
             <IsometricGrid cubes={testCubes} cubeSize={325} gap={0} columns={6} />
           </div>
         </div>
+        <LiveSection />
+        <UpcomingSchedule />
       </section>
 
-      <LiveSection />
-      <UpcomingSchedule />
+
     </>
   )
 }
