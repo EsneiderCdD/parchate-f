@@ -1,6 +1,7 @@
 import './App.css'
 import IsometricGrid from './components/specific/IsometricCube/IsometricGrid'
 import LiveSection from './components/specific/LiveSection/LiveSection'
+import UpcomingSchedule from './components/specific/UpcomingSchedule/UpcomingSchedule'
 
 const testCubes = [
   { id: 1, bgColor: '#2563eb' },
@@ -42,9 +43,10 @@ function App() {
             <IsometricGrid cubes={testCubes} cubeSize={325} gap={0} columns={6} />
           </div>
         </div>
-        <LiveSection />
-
       </section>
+
+      <LiveSection />
+      <UpcomingSchedule />
     </>
   )
 }
