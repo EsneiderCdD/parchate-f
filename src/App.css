@@ -8,7 +8,7 @@
 .layout {
   max-width: 1350px;
   margin: 0 auto;
-  min-height: 100vh;
+  height: 700px;
   background-color: #0a0a0f;
   background-image: radial-gradient(circle, rgba(255,255,255,0.06) 1px, transparent 1px);
   background-size: 24px 24px;
